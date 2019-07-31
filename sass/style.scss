@@ -1,11 +1,7 @@
-@import "blocks/main-header.scss";
-@import "blocks/logo.scss";
-@import "blocks/main-navigation.scss";
-
 body {
 	font-family: 'Open Sans', sans-serif;
 	min-width: 320px;
-	max-width: 520px;
+	max-width: 420px;
 	box-sizing: border-box;
 	border-color: #fff;
 	padding-top: 22px;
@@ -14,6 +10,9 @@ body {
 
 a {
 	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+	-webkit-focus-ring-color: rgba(255, 255, 255, 0); 
+	outline: none;
 }
 
 .visually-hidden {
@@ -23,3 +22,7 @@ a {
 	height: 1px;
 	margin: -1px;
 }
+
+@import "blocks/main-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-navigation.scss";

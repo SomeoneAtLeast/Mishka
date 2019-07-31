@@ -78,21 +78,20 @@
 .main-navigation__list-item {
 	list-style: none;
 	border-bottom: 1px solid #ececec;
-	padding-bottom: 5.2%;
+
+	&--logo {
+		padding-bottom: 5.2%;
+	}
 }
 
 .main-navigation__item-link {
 	display: block;
 	position: relative;
-	width: 300px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	font-size: 17px;
-	line-height: 24px;
-	font-weight: bold;
 	color: #000;
 	padding-top: 8%;
-	padding: 8% 0 3.7% 75px;
+	padding: 8% 0 8.9% 0;
 	letter-spacing: 0.008em;
 	transition: 0.3s;
 
@@ -105,7 +104,7 @@
 		content: "";
 		display: inline-block;
 		position: absolute;
-		top: 51%;
+		top: 40%;
 		left: 10%;
 		width: 21px;
 		height: 21px;
@@ -120,7 +119,7 @@
 		content: "";
 		display: inline-block;
 		position: absolute;
-		top: 48.5%;
+		top: 38.5%;
 		left: 9.5%;
 		width: 21px;
 		height: 21px;
@@ -152,4 +151,15 @@
 			transition: 0.1s;
 		}
 	}
+}
+
+.main-navigation__menu-text {
+	display: block;
+	box-sizing: border-box;
+	width: 320px;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: bold;
+	padding-left: 75px;
+	margin: 0 auto; 
 }
