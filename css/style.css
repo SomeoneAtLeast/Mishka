@@ -1,6 +1,3 @@
-.main-header {
-  padding: 0 25px 0 25px; }
-
 .logo-link {
   display: block;
   width: 88px;
@@ -11,16 +8,10 @@
     display: inline-block;
     width: 86px;
     height: 35px;
-    background-image: url("../img/mishka-logo-mobile.svg");
+    background-image: url("../img/logo/mishka-logo-mobile.svg");
     background-size: 86px 35px;
     background-repeat: no-repeat;
     transition: 0.3s; }
-  .logo-link:hover::before {
-    content: "";
-    transform: scale(1.05); }
-  .logo-link:focus::before {
-    content: "";
-    transform: scale(1.05); }
   .logo-link:active {
     opacity: 0.3;
     transition: 0.1s; }
@@ -41,7 +32,7 @@
   margin-top: 3px;
   cursor: pointer;
   top: 5px;
-  right: 4px; }
+  right: 9%; }
 
 .main-navigation__line {
   display: block;
@@ -88,16 +79,75 @@
   margin: 0; }
 
 .main-navigation__list-item {
-  list-style: none; }
+  list-style: none;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 5.2%; }
+
+.main-navigation__item-link {
+  display: block;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 8%;
+  padding: 8% 0 3.7% 75px;
+  letter-spacing: 0.008em;
+  transition: 0.3s; }
+  .main-navigation__item-link:active {
+    color: rgba(0, 0, 0, 0.3);
+    transition: 0.1s; }
+  .main-navigation__item-link--search::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 51%;
+    left: 10%;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/menu-img/search.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    opacity: 0.2;
+    transition: 0.3s; }
+  .main-navigation__item-link--cart::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 48.5%;
+    left: 9.5%;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/menu-img/cart.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 18px;
+    opacity: 0.2;
+    transition: 0.3s; }
+
+.main-navigation__item-link--search:active::before {
+  background-image: url("../img/menu-img/search-blue.svg");
+  opacity: 0.3;
+  transition: 0.1s; }
+
+.main-navigation__item-link--cart:active::before {
+  background-image: url("../img/menu-img/cart-blue.svg");
+  opacity: 0.3;
+  transition: 0.1s; }
 
 body {
   font-family: 'Open Sans', sans-serif;
   min-width: 320px;
-  max-width: 768px;
+  max-width: 520px;
   box-sizing: border-box;
   border-color: #fff;
   padding-top: 22px;
   margin: 0; }
+
+a {
+  text-decoration: none; }
 
 .visually-hidden {
   position: absolute;

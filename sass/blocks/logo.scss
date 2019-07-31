@@ -9,26 +9,10 @@
 		display: inline-block;
 		width: 86px;
 		height: 35px;
-		background-image: url("../img/mishka-logo-mobile.svg");
+		background-image: url("../img/logo/mishka-logo-mobile.svg");
 		background-size: 86px 35px;
 		background-repeat: no-repeat;
 		transition: 0.3s;
-	}
-
-	&:hover {
-		&::before {
-			content: "";
-			transform: scale(1.05);
-
-		}
-	}
-
-	&:focus {
-		&::before {
-			content: "";
-			transform: scale(1.05);
-
-		}
 	}
 
 	&:active {

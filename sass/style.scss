@@ -5,11 +5,15 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	min-width: 320px;
-	max-width: 768px;
+	max-width: 520px;
 	box-sizing: border-box;
 	border-color: #fff;
 	padding-top: 22px;
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
 }
 
 .visually-hidden {
