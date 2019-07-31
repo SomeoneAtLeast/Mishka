@@ -1,0 +1,20 @@
+@import "blocks/main-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-navigation.scss";
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	max-width: 320px;
+	box-sizing: border-box;
+	border-color: #fff;
+	padding-top: 22px;
+	margin: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}

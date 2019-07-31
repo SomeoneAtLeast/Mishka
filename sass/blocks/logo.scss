@@ -1,0 +1,44 @@
+.logo-link {
+	display: block;
+	width: 88px;
+	margin: 0 auto;
+	transition: 0.3s;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 86px;
+		height: 35px;
+		background-image: url("../img/mishka-logo-mobile.svg");
+		background-size: 86px 35px;
+		background-repeat: no-repeat;
+		transition: 0.3s;
+	}
+
+	&:hover {
+		&::before {
+			content: "";
+			transform: scale(1.05);
+
+		}
+	}
+
+	&:focus {
+		&::before {
+			content: "";
+			transform: scale(1.05);
+
+		}
+	}
+
+	&:active {
+		opacity: 0.3;
+		transition: 0.1s;
+
+		&::before {
+			content: "";
+			transform: scale(0.95);
+			transition: 0.1s;
+		}
+	}
+}
