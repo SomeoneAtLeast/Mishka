@@ -20,6 +20,6 @@ menu_open_btn.addEventListener("click", function (evt) {
 			main_navigation__list_item_logo.classList.remove("close-menu");
 			setTimeout(function(){
     			main_navigation__list_item.forEach(n => n.classList.remove("close-menu"));
-			}, 500);
+			}, 300);
 	}
 }); 

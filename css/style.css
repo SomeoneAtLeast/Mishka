@@ -186,11 +186,13 @@ a {
 .main-navigation .open-menu {
   display: block;
   animation-name: show-menu;
-  animation-duration: 0.6s; }
+  animation-duration: 0.8s; }
 
 .main-navigation .close-menu {
   animation-name: close-menu;
-  animation-duration: 0.6s; }
+  display: block;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards; }
 
 @keyframes show-menu {
   0% {
