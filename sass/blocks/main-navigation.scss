@@ -115,6 +115,8 @@
 	&:active {
 		color: rgba(0, 0, 0, 0.3);
 		transition: 0.1s;
+		box-shadow: 0 0 0 2px #fff inset,
+		0 0 0 4px #000 inset;
 	}
 
 	&--search::before {
