@@ -163,3 +163,8 @@
     transform: translateY(0); }
   100% {
     transform: translateY(-500px); } }
+
+@media (min-width: 768px) {
+  .main-navigation__list {
+    display: flex;
+    flex-wrap: wrap; } }

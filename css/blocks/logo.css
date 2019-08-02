@@ -19,3 +19,10 @@
       content: "";
       transform: scale(0.95);
       transition: 0.1s; }
+
+@media (min-width: 768px) {
+  .logo-link::before {
+    width: 113px;
+    height: 46px;
+    background-image: url("../img/logo/mishka-logo-tablet.svg");
+    background-size: 113px 46px; } }
