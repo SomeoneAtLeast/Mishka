@@ -226,8 +226,60 @@
 
 @media (min-width: 768px) {
 
+	.main-navigation__btn {
+		display: none;
+	}
+
 	.main-navigation__list {
 		display: flex;
 		flex-wrap: wrap;
+	}
+
+	.main-navigation__list-item:not(.main-navigation__list-item--logo)	{
+		display: block;
+	}
+
+	.main-navigation__list-item {
+
+		&--logo {
+			order: 1;
+		}
+
+		&--catalog {
+			order: 4;
+		}
+
+		&--knitting {
+			order: 5;
+		}
+
+		&--search {
+			order: 2;
+		}
+
+		&--cart {
+			order: 3;
+		}
+	}
+
+	.main-navigation__list-item--logo {
+		padding-right: 33.9%;
+		padding-left: 6.2%;
+		padding-bottom: 2%;
+	}
+
+	.main-navigation__item-link--search {
+		width: 83px;
+		padding: 55% 0;
+	}
+
+	.main-navigation__menu-text {
+		&--search {
+			position: absolute;
+			clip: rect(0 0 0 0);
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+		}
 	}
 }
