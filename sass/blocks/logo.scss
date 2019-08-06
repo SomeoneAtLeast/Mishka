@@ -37,3 +37,14 @@
 		}
 	}
 }
+
+@media (min-width: 1080px) { 
+	.logo-link {
+		&::before {
+			width: 149px;
+			height:	72px;
+			background-image: url("../img/logo/mishka-logo-desktop.svg");
+			background-size: 149px 72px;
+		}
+	}
+}
