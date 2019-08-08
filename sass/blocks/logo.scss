@@ -40,11 +40,41 @@
 
 @media (min-width: 1080px) { 
 	.logo-link {
+
 		&::before {
 			width: 149px;
 			height:	72px;
 			background-image: url("../img/logo/mishka-logo-desktop.svg");
 			background-size: 149px 72px;
 		}
+
+		&:hover {
+			opacity: 0.6;
+
+			&::before {
+				transform: scale(0.97);
+			}
+		}
+
+		&:focus {
+			opacity: 0.6;
+
+			&::before {
+				transform: scale(0.97);
+			}
+		}
+
+		&:active {
+			opacity: 0.3;
+			transition: 0.1s;
+
+				&::before {
+					content: "";
+					transform: scale(0.95);
+					transition: 0.1s;
+				}
+			}
+
 	}
 }
+

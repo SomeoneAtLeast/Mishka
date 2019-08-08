@@ -262,7 +262,7 @@
 		&--catalog {
 			order: 4;
 			width: 170px;
-			background-color: #f9f9f9;
+			background-color: transparent;
 			border: none;
 			padding-left: 3.9%;
 		}
@@ -270,7 +270,7 @@
 		&--knitting {
 			order: 5;
 			width: 170px;
-			background-color: #f9f9f9;
+			background-color: transparent;
 			border: none;
 			margin-left: 0.1%;
 		}
@@ -286,7 +286,7 @@
 		&--delivery {
 			order: 6;
 			width: 250px;
-			background-color: #f9f9f9;
+			background-color: transparent;
 			border: none;
 			margin-left: auto;
 			padding-right: 5.2%;
@@ -390,7 +390,7 @@
 
 @media (min-width: 1080px) {
 
-.main-navigation	.main-navigation__list-item {
+	.main-navigation	.main-navigation__list-item {
 		display: flex;
 		align-items: center;
 
@@ -404,7 +404,7 @@
 
 		&--catalog {
 			order: 1;
-			width: 200px;
+			width: 17.4%;
 			border-bottom: 1px solid #ececec;
 			border-right: 1px solid #ececec;
 			background-color: #fff;
@@ -414,7 +414,7 @@
 
 		&--knitting {
 			order: 2;
-			width: 200px;
+			width: 17.4%;
 			border-bottom: 1px solid #ececec;
 			background-color: #fff;
 		}
@@ -423,11 +423,12 @@
 			order: 4;
 			flex-grow: 1;
 			max-height: 88px;
+			border-right: none;
 		}
 
 		&--cart {
 			order: 5;
-			width: 315px;
+			width: 100%;
 		}
 
 		&--new-arrival {
@@ -440,7 +441,7 @@
 
 		&--sale {
 			order: 7;
-			width:auto;
+			width: auto;
 			background-color: #f9f9f9;
 			border: none;
 			margin-left: 5.2%;
@@ -448,11 +449,85 @@
 
 		&--delivery {
 			order: 8;
-			padding-right: 3.5%;
+			width: 100%;
+			padding-right: 0;
 		}
 	}
 
+	.main-navigation__item-link--search {
+		min-height: 82px; 
+		width: 100%;
+
+		&:hover {
+
+			&::before {
+				background-image: url("../img/menu-img/search-blue.svg");
+				opacity: 1;
+
+			}
+		}
+
+		&:focus {
+
+			&::before {
+				background-image: url("../img/menu-img/search-blue.svg");
+				opacity: 1;
+
+			}
+		}
+
+		&:active {
+
+			&::before {
+				background-image: url("../img/menu-img/search-blue.svg");
+				opacity: 0.3;
+				transition: 0.1s;
+			}
+		}
+	}
+
+	.main-navigation__item-link--cart {
+		&:hover {
+
+			&::before {
+				background-image: url("../img/menu-img/cart-blue.svg");
+				opacity: 1;
+
+			}
+		}
+
+		&:focus {
+
+			&::before {
+				background-image: url("../img/menu-img/cart-blue.svg");
+				opacity: 1;
+
+			}
+		}
+
+		&:active {
+
+			&::before {
+				background-image: url("../img/menu-img/cart-blue.svg");
+				opacity: 0.3;
+				transition: 0.1s;
+			}
+		}
+	}
 	.main-navigation__item-link {
+
+		&:hover {
+			color: rgba(0, 0, 0, 0.6);
+		}
+
+		&:focus {
+			color: rgba(0, 0, 0, 0.6);
+		}
+
+		&:active {
+			box-shadow: none;
+			color: rgba(0, 0, 0, 0.3);
+		}
 
 		&--cart {
 			padding: 28px 0 32px 0;
@@ -470,20 +545,26 @@
 			padding: 0;
 		}
 
+		&--cart {
+			text-align: center;
+		}
+
 		&--cart::before {
 			top: 38%;
 			left: 7.5%;
 		}
 
 		&--search::before {
-			top: -8px;
+			top: 33px;
 			left: 50%;
 			margin-left: -10px;
 			padding: 0;
 		}
 
-		&--delivery{
-			padding-top: 6.8%;
+		&--delivery {
+			padding: 0;
+			padding-top: 2.5%;
+			padding-bottom: 2.5%;
 		}
 
 		&--new-arrival {
@@ -506,6 +587,10 @@
 			margin: -1px;
 		}
 
+		&--cart {
+			padding-left: 0;
+		}
+
 		&--catalog {
 			font-size: 17px;
 			text-align: center;
@@ -524,7 +609,6 @@
 			font-size: 15px;
 			text-align: center;
 			padding: 0;
-			width: auto;
 			font-weight: normal;
 			letter-spacing: 0.002em;
 		}
@@ -541,4 +625,75 @@
 			width: auto;
 		}
 	}
+
+	.main-navigation .main-navigation__list-item {
+
+		&--sale {
+			display: none;
+		}
+
+		&--new-arrival {
+			display: none;
+		}
+	}
 }
+
+@media (min-width: 1250px) {
+
+	.main-navigation {
+		position: relative;
+	} 
+
+	.main-navigation .main-navigation__list-item {
+
+		&--cart {
+			width: 315px;
+			border-left: 1px solid #ececec;
+		}
+
+		&--new-arrival {
+			position: absolute;
+			z-index: 1000;		
+		}
+
+		&--sale {
+			position: absolute;
+			z-index: 1000;
+		}
+
+		&--delivery {
+			position: absolute;
+			z-index: 1000;
+			right: 0;
+			top: 98px;
+			width: auto;
+			padding-right: 1.4%;
+		}
+
+		&--sale {
+			display: block;
+			background-color: transparent;
+			top: 99px;
+			left: 18.2%;
+		}
+
+		&--new-arrival {
+			display: block;
+			background-color: transparent;
+			top: 95px;
+		}
+	}
+
+	.main-navigation__item-link--search {
+		min-height: 82px; 
+		width: 82px;
+	}
+
+	.main-navigation__menu-text {
+		
+		&--cart {
+			padding-left: 30px;
+		}
+
+	}
+} 

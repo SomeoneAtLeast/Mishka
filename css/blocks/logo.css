@@ -32,4 +32,19 @@
     width: 149px;
     height: 72px;
     background-image: url("../img/logo/mishka-logo-desktop.svg");
-    background-size: 149px 72px; } }
+    background-size: 149px 72px; }
+  .logo-link:hover {
+    opacity: 0.6; }
+    .logo-link:hover::before {
+      transform: scale(0.97); }
+  .logo-link:focus {
+    opacity: 0.6; }
+    .logo-link:focus::before {
+      transform: scale(0.97); }
+  .logo-link:active {
+    opacity: 0.3;
+    transition: 0.1s; }
+    .logo-link:active::before {
+      content: "";
+      transform: scale(0.95);
+      transition: 0.1s; } }
