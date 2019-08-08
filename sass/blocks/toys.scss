@@ -1,0 +1,51 @@
+.toys {
+	background-color: #57c3b3;
+	padding: 25px 9% 30px 9%;
+	box-sizing: border-box;
+	min-height: 100px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 21px;
+		right: 27px;
+		width: 60px;
+		height: 60px;
+		background-image: url("../img/what-we-do/toy.svg");
+		background-repeat: no-repeat;
+		background-size: 60px 60px;
+		opacity: 0.2;
+	}
+}
+
+.toys__text {
+	width: 125px;
+	font-size: 19px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+@media (min-width: 768px) { 
+
+	.toys  {
+		flex-grow: 1;
+		padding: 26px 9% 30px 5%;
+
+		&::after {
+			top: 32px;
+			right: 33px;
+		}
+	}
+
+	.toys__text {
+		width: 125px;
+		font-size: 20px;
+		line-height: 30px;
+		margin-left: 1%;
+	}
+}

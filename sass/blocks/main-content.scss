@@ -1,0 +1,33 @@
+.main-content-down {
+	animation-name: content-down;
+	animation-duration: 0.3s;
+}
+
+.main-content-up {
+	animation-name: content-up;
+	animation-duration: 0.3s;
+}
+
+@keyframes content-down {
+
+ 0% {
+ 	transform: translateY(0);
+ 	}
+
+100% {
+ 	transform: translateY(312.2668px);
+ 	}
+
+}
+
+@keyframes content-up {
+	
+ 0% {
+ 	transform: translateY(0);
+ 	}
+
+ 100% {
+		transform: translateY(-312.2668px);
+ 	}	
+
+}

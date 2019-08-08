@@ -1,0 +1,50 @@
+.interior-item {
+	background-color: #64d1bc;
+	padding: 25px 9% 30px 9%;
+	box-sizing: border-box;
+	min-height: 100px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 23px;
+		right: 36px;
+		width: 40px;
+		height: 62px;
+		background-image: url("../img/what-we-do/interior.svg");
+		background-repeat: no-repeat;
+		background-size: 40px 62px;
+		opacity: 0.2;
+	}
+}
+
+.interior-item__text{
+	width: 125px;
+	font-size: 19px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+@media (min-width: 768px) { 
+
+	.interior-item  {
+		flex-grow: 1;
+		padding: 26px 9% 30px 5%;
+
+		&::after {
+			top: 30px;
+			right: 36px;
+		}
+	}
+
+	.interior-item__text {
+		width: 125px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
