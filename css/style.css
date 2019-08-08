@@ -236,7 +236,7 @@ a {
 
 @keyframes show-menu {
   0% {
-    transform: translateY(-500px); }
+    transform: translateY(-600px); }
   100% {
     transform: translateY(0); } }
 
@@ -244,7 +244,7 @@ a {
   0% {
     transform: translateY(0); }
   100% {
-    transform: translateY(-500px); } }
+    transform: translateY(-600px); } }
 
 .main-navigation .main-navigation__list-item--delivery {
   display: none; }
@@ -533,13 +533,13 @@ a {
   0% {
     transform: translateY(0); }
   100% {
-    transform: translateY(312.2668px); } }
+    transform: translateY(37.1%); } }
 
 @keyframes content-up {
   0% {
     transform: translateY(0); }
   100% {
-    transform: translateY(-312.2668px); } }
+    transform: translateY(-37.1%); } }
 
 .what-we-do {
   background-image: url("../img/what-we-do/main-img-mobile.jpg");

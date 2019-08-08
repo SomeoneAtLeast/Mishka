@@ -1,1 +1,10 @@
-@media (min-width: 1080px){.main-header__container{padding:0 4%}.main-header{background-color:#fff}.main-header__container{max-width:1250px;margin:0 auto}}
+@media (min-width: 1080px) {
+  .main-header__container {
+    padding: 0 4% 0 4%; } }
+
+@media (min-width: 1080px) {
+  .main-header {
+    background-color: #fff; }
+  .main-header__container {
+    max-width: 1250px;
+    margin: 0 auto; } }
